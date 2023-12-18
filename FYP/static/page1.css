@@ -1,0 +1,86 @@
+/* this section is for blog in page 1  */
+.main-area{
+    flex-direction: column;
+    font-size: large;
+    /* background-color: black; */
+}
+
+.upper{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.header-sa{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.upper-area{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: white;
+}
+.left-area{
+    text-align: justify;
+    display: flex;
+    width: 50%;
+    /* height: !00%; */
+    padding: 10px;
+    background-color: white;
+}
+.left-area li{
+    width: 90%;
+    padding: 10px;
+}
+.right-area{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+}
+.right-area img{
+    width: 80%;
+    height: 100%;
+}
+.middle{
+    text-align: justify;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.example{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.example img{
+    width: 80%;
+}
+.bottom{
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.header-cci{
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom li{
+    padding: 10px;
+}

@@ -1,0 +1,2 @@
+Translated,Noise Cleared,Tokens,POS Tags,Stemming,Lematization,Subjectivity Score,Sentiment Label
+Different Input Data,Different Input Data,"['Different', 'Input', 'Data']","[('Different', 'NNP'), ('Input', 'NNP'), ('Data', 'NNP')]","['differ', 'input', 'data']","['Different', 'Input', 'Data']",0.6,Neutral

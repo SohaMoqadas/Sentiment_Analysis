@@ -1,0 +1,241 @@
+/* .selection-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: left;
+  position: relative;
+}
+
+.selection-div label {
+  width: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+/* .selection-div select {
+  display: none;
+  hide original element
+} */
+
+/* .select-selected {
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+
+} */
+
+/*style the arrow inside the select element:*/
+/* .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 60px;
+  right: 48%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+} */
+
+/*point the arrow upwards when the select box is open (active):*/
+/* .select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 50px;
+} */
+
+/*style the items (options), including the selected item:*/
+/* .select-items div,
+.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+} */
+
+/*style items (options):*/
+/* .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 50%;
+} */
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-data{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-data label{
+  font-weight: bold;
+  font-size: medium;
+}
+.input-data textarea{
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  /* border: 1.5px solid rgb(53, 47, 47); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:10px ;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+textarea:focus{
+  border: 5px solid rgb(53, 47, 47);
+  outline: none;
+}
+
+.labelinput .svg-div {
+  padding: 20px;
+  margin: 10px;
+  margin-left: 0px;
+  width: 100%;
+  display: flex;
+  /* border: 2px dashed black; */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 10px; */
+  height: 30px;
+  justify-content: space-between;
+}
+
+.svg-div span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: gray;
+  font-weight: bold;
+}
+
+.labelinput {
+  margin-top: 10px;
+  width: 96%;
+}
+
+.labelinput label {
+  font-weight: bold;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 10px;
+  /* margin-left: 213px; */
+}
+
+.labelinput svg {
+  width: 10%;
+  color: gray;
+  /* margin: 0 auto; */
+}
+
+.submit-main {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.submit {
+  /* width: 100px; */
+  /* width: fit-content; */
+  padding: 10px;
+  font-weight: 900;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0px;
+}
+
+/* Style for the select container */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 96%;
+  /* Adjust the width as needed */
+}
+
+.custom-select label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Style for the select box */
+.custom-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 5px; */
+  appearance: none;
+  /* Remove default arrow in some browsers */
+  -webkit-appearance: none;
+  /* Remove default arrow in Safari */
+  -moz-appearance: none;
+  /* Remove default arrow in Firefox */
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+/* Style for the arrow icon */
+.custom-select::after {
+  content: '\25BC';
+  /* Unicode character for down arrow */
+  position: absolute;
+  top: 70%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #555;
+  pointer-events: none;
+  /* Avoid the arrow icon being clickable */
+}
+
+/* Hover effect */
+.custom-select:hover select {
+  border-color: #666;
+}
+
+/* Focus effect */
+.custom-select select:focus {
+  outline: none;
+  border-color: #2196F3;
+  /* Example color for focus effect */
+}
+
+.extract-context{
+  width: 100%;
+  display: flex;
+}
+
+.left-extract-area{
+  display: flex;
+  width:50% ; 
+  flex-direction: column; 
+  padding: 10px;
+}
+
+.right-extract-area{
+  display: flex;
+  width: 50%;
+}

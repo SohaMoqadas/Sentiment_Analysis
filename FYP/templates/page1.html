@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CCI 🙂</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page1.css') }}">
+</head>
+<body>
+    <div class="header">
+            <div class="header-name">🙂Sentiment Analysis based Consumer Confidence Index Computation of Purchasing Behavior</div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-items"><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a></div>
+            <div class="sidebar-items"><a href="/page6" {% if request.path == '/page6' %}class="active"{% endif %}>Text Extraction</a></div>
+            <div class="sidebar-items"><a href="/page4" {% if request.path == '/page4' %}class="active"{% endif %}>Language Processing</a></div>
+            <div class="sidebar-items"><a href="/page2" {% if request.path == '/page2' %}class="active"{% endif %}>CCI Computation</a></div>
+            <div class="sidebar-items"><a href="/page5" {% if request.path == '/page5' %}class="active"{% endif %}>Reporting</a></div>
+            <div class="sidebar-items"><a href="/page3" {% if request.path == '/page3' %}class="active"{% endif %}>About</a></div>
+        </div> 
+       <div class="content">
+        <div class="main-area">
+            <!-- <div class="left-area">
+                    <img src="{{ url_for('static', filename='pic.jpeg') }}" alt="Graph image" />
+            </div>
+            <div class="right-area">
+                <div class="boxes">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quae laborum consequuntur veritatis. Hic, dolore exercitationem! Nulla, illum aperiam consequatur dignissimos ad, dolore dolorum mollitia odio provident fugit doloribus officia.</span>
+                </div>
+                <div class="boxes">
+                    <span>ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quae laborum consequuntur veritatis. Hic, dolore exercitationem! Nulla, illum aperiam consequatur dignissimos ad, dolore dolorum mollitia odio provident fugit doloribus officia.</span>
+                </div>
+                <div class="boxes">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quae laborum consequuntur veritatis. Hic, dolore exercitationem! Nulla, illum aperiam consequatur dignissimos ad, dolore dolorum mollitia odio provident fugit doloribus officia.</span>
+                </div>
+            </div> -->
+            <div class="upper">
+                <div class="header-sa">
+                    <a  href="/page6">Sentiment Analysis (SA):</a>
+                </div>
+                Sentiment analysis, often referred to as opinion mining, is a natural language processing (NLP) technique that helps us understand the emotions and opinions expressed in text data. It plays a crucial role in gauging public perception, customer feedback, and social media sentiment. Sentiment analysis is typically performed using machine learning models, such as recurrent neural networks (RNNs) or transformers, which are trained on labeled data to classify text as positive, negative, or neutral.
+            </div>
+            <div class="upper-area">
+                <div class="left-area">
+                    <ul>
+                        <li>
+                            Sentiment analysis involves preprocessing text data, like tokenization and removing stop words, followed by feeding it into a trained model. The model assigns a sentiment label, often represented as a probability score for various sentiment classes, providing nuanced sentiment understanding.
+                        </li>
+                        <li>
+                            Model interpretability is crucial in sentiment analysis. Techniques like feature importance analysis, attention maps, and LIME make the model's decisions transparent, revealing which words influenced the sentiment prediction and aiding in bias identification and correction.
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="right-area">
+                    <img src="{{ url_for('static', filename='diagram.png') }}" alt="diagram image" />
+                </div>
+            </div>
+            <div class="middle">
+                The process of sentiment analysis can be explained through several key steps. First, the text data is preprocessed, including tasks like tokenization and removing stop words. Next, the preprocessed data is fed into the trained model, which assigns a sentiment label to the text based on patterns and context learned during training. The model's output is often a probability score for each sentiment class, allowing for a more nuanced understanding of sentiment intensity.
+            </div>
+            <div class="example">
+                Here is a light example to show how really it works
+                <img alt="analysis" src="{{url_for('static',filename='analysis.png')}}">
+            </div>
+            <div class="bottom">
+                In summary, sentiment analysis is a valuable tool for businesses and researchers to gain insights into public opinion and customer feedback. Its application extends to various domains, including marketing, customer service, and social media monitoring. To enhance its reliability and usefulness, making sentiment analysis models explainable is crucial, ensuring a better understanding of how and why they make sentiment predictions.
+                
+                <div class="header-cci">
+                    Consumer Confidence Index (CCI):
+                </div>
+                <ul>
+                    <li>
+                        The Consumer Confidence Index (CCI) is a crucial economic indicator that measures the level of optimism
+                            or pessimism among consumers about the current and the future state of economy.
+                    </li>
+                    <li>
+                        The Consumer Confidence Index is a gauge of consumer optimism regarding the economy, impacting their spending habits. A higher index signifies increased confidence and higher consumer spending, while a lower index indicates reduced confidence and decreased spending.
+                    </li>
+                </ul>
+            </div>
+        </div> 
+       </div>  
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener("click", function() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "flex") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "flex";
+            }
+        });
+
+    </script>
+</body>
+</html>

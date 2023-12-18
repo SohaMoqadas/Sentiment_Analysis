@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CCI 🙂</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .about{
+    width: 100%;
+    display: flex;
+    margin: 30px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    /* background : linear-gradient(75.2deg, rgb(41, 196, 255) -2.5%, rgb(255, 158, 211) 55%, rgb(255, 182, 138) 102.3%);; */
+    background: radial-gradient(1224px at 10.6% 8.8%, rgb(255, 255, 255) 0%, rgb(153, 202, 251) 100.2%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:rgb(53, 47, 47);
+}
+
+.about-internal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgb(53, 47, 47);
+    border-radius: 10px;
+    
+    padding: 20px;
+}
+
+.about h1{
+    text-align: left;
+    margin-bottom: 0px;
+}
+        .about-internal{
+            text-align: left;
+        }
+        h1{
+            text-align: left;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- <div class="header-inner"> -->
+        <!-- <div class="dropdown">
+                <button id="menu" class="menu"> <img src="{{url_for('static',filename='menu.png')}}" alt="Icon"></button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <a href="\page2">Page 2</a>
+                  <a href="\page3">Page 3</a>
+                </div>
+            </div> -->
+        <div class="header-name">🙂Sentiment Analysis based Consumer Confidence Index Computation of Purchasing Behavior
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-items"><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a></div>
+            <div class="sidebar-items"><a href="/page6" {% if request.path == '/page6' %}class="active"{% endif %}>Text Extraction</a></div>
+            <div class="sidebar-items"><a href="/page4" {% if request.path == '/page4' %}class="active"{% endif %}>Language Processing</a></div>
+            <div class="sidebar-items"><a href="/page2" {% if request.path == '/page2' %}class="active"{% endif %}>CCI Computation</a></div>
+            <div class="sidebar-items"><a href="/page5" {% if request.path == '/page5' %}class="active"{% endif %}>Reporting</a></div>
+            <div class="sidebar-items"><a href="/page3" {% if request.path == '/page3' %}class="active"{% endif %}>About</a></div>
+        </div> 
+        <div class="content">
+            <div class="main-area">
+                <div class="about">
+                    <div class="about-internal">
+                        <h1>About</h1>
+                        <p>
+                            A Sentiment Analysis-based Consumer Confidence Index (CCI) for Purchasing Behavior 
+                            involves analyzing textual data, like social media posts and reviews, to gauge consumer sentiment.
+                            The process includes data collection, text preprocessing, sentiment analysis, scoring, aggregation, 
+                            normalization, and index calculation. The resulting CCI provides a numerical representation of consumer
+                            confidence over time, helping to predict trends in purchasing behavior. This approach enables businesses
+                            and policymakers to understand and respond to shifts in consumer sentiment, facilitating more informed
+                            decision-making
+                        </p>
+                        <h1>Purpose</h1>
+                        <p>Our mission is to perform normalization, compute CCI values and apply ML algorithms and
+                            further more the project aims to use natural language processing and machine learning
+                            techniques to classify the sentiment of the reviews as positive, negative, or neutral.
+                            Compute the CCI for the industry or market segment based on the sentiment analysis of the
+                            consumer reviews. Provide insights and recommendations to businesses and policymakers based
+                            on the findings of the analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener("click", function () {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "flex";
+            }
+        });
+    </script>
+</body>
+
+</html>

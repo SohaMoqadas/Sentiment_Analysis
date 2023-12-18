@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CCI 🙂</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='inputFilePage.css') }}">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-name">🙂Sentiment Analysis based Consumer Confidence Index Computation of Purchasing Behavior
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-items"><a href="/" {% if request.path=='/' %}class="active" {% endif %}>Home</a></div>
+            <div class="sidebar-items"><a href="/page6" {% if request.path=='/page6' %}class="active" {% endif %}>Text
+                    Extraction</a></div>
+            <div class="sidebar-items"><a href="/page4" {% if request.path=='/page4' %}class="active" {% endif
+                    %}>Language Processing</a></div>
+            <div class="sidebar-items"><a href="/page2" {% if request.path=='/page2' %}class="active" {% endif %}>CCI
+                    Computation</a></div>
+            <div class="sidebar-items"><a href="/page5" {% if request.path=='/page5' %}class="active" {% endif
+                    %}>Reporting</a></div>
+            <div class="sidebar-items"><a href="/page3" {% if request.path=='/page3' %}class="active" {% endif
+                    %}>About</a></div>
+        </div>
+        <div class="content">
+            <div class="main-area">
+                <!-- Generate Dataset
+                Normalization Report
+                Sentiment Report
+                Subjective Score Report
+                CCI Computation  -->
+                <div class="form-main">
+                    <div class="form-main-inner">
+                        <div class="heading">Reporting of CCI</div>
+                        <form method="POST" enctype="multipart/form-data">
+                            <div class="form">
+                                
+                                <div class="label"> <label>Report Generate</label></div>
+                                <div class="checkbox-main">
+                                    <fieldset>
+                                        <!-- <legend></legend> -->
+                                        <div class="checkbox">
+                                            <input id="check1" type="radio" name="print" value="normalization" />
+                                            <label for="check1">Normalization Report</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="check2" type="radio" name="print" value="sentiment" />
+                                            <label for="check2">Sentiment Report</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="check3" type="radio" name="print" value="subjective" />
+                                            <label for="check3">Subjective Score</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="check4" type="radio" name="print" value="cci_comp" />
+                                            <label for="check4">CCI Computation</label>
+                                        </div>
+                                        
+                                    </fieldset>
+                                </div>
+                                
+                                <div class="submit-main">
+                                    <input class="submit" type="submit" name="Submit Data" value="Download" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener("click", function () {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "flex";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CCI 🙂</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='output.css') }}">
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- <div class="header-inner"> -->
+        <!-- <div class="dropdown">
+                <button id="menu" class="menu"> <img src="{{url_for('static',filename='menu.png')}}" alt="Icon"></button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <a href="\page2">Page 2</a>
+                  <a href="\page3">Page 3</a>
+                </div>
+            </div> -->
+        <div class="header-name">🙂Sentiment Analysis based Consumer Confidence Index Computation of Purchasing Behavior
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="container">
+        <!-- <div class="sidebar">
+            <div class="sidebar-items"><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a></div>
+            <div class="sidebar-items"><a href="/page6" {% if request.path == '/page6' %}class="active"{% endif %}>Text Extraction</a></div>
+            <div class="sidebar-items"><a href="/page4" {% if request.path == '/page4' %}class="active"{% endif %}>Language Processing</a></div>
+            <div class="sidebar-items"><a href="/page2" {% if request.path == '/page2' %}class="active"{% endif %}>CCI Computation</a></div>
+            <div class="sidebar-items"><a href="/page5" {% if request.path == '/page5' %}class="active"{% endif %}>Reporting</a></div>
+            <div class="sidebar-items"><a href="/page3" {% if request.path == '/page3' %}class="active"{% endif %}>About</a></div>
+        </div> 
+        <div class="content"> -->
+            <div class="main-area-output">
+                <div class="print-output">
+                    <a href="/page5?print=True" >Print</a>
+                </div>
+                <table class="output">
+                    
+                    {{data |safe}}
+                </table>
+            </div>
+        <!-- </div> -->
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener("click", function () {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "flex";
+            }
+        });
+    </script>
+</body>
+
+</html>

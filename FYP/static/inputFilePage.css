@@ -1,0 +1,205 @@
+/* this is input file css */
+
+.form-main{
+    /* margin:50px;
+    border-radius: 50px;
+    background-color: #89cff0;
+    padding: 10px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px auto; */
+    width: 100%;
+    display: flex;
+    margin: 30px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    /* background : linear-gradient(75.2deg, rgb(41, 196, 255) -2.5%, rgb(255, 158, 211) 55%, rgb(255, 182, 138) 102.3%);; */
+    background: radial-gradient(1224px at 10.6% 8.8%, rgb(255, 255, 255) 0%, rgb(153, 202, 251) 100.2%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:rgb(53, 47, 47);
+}
+
+.form-main-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgb(53, 47, 47);
+    border-radius: 10px;
+    
+    padding: 20px;
+}
+
+.heading{
+    display:flex;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.label , .label{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    margin-left:220px ;
+}
+
+.label label{
+    font-weight: 600;
+    font-size: medium;
+}
+
+.labelinput .svg-div{
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    border: 2px dashed black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 30px;
+    justify-content:space-between;
+}
+
+.svg-div span{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color:gray;
+    font-weight: bold;
+}
+
+
+.labelinput label{
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-left: 213px;
+}
+
+.labelinput svg{
+    width: 10%;
+    color:gray;
+    /* margin: 0 auto; */
+}
+
+.input1{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.input1 input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(53, 47, 47);
+    margin-top:10px ;
+    margin-bottom: 10px;
+    font-size: large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:focus{
+    border: 5px solid rgb(48, 70, 210);
+    outline: none;
+}
+
+.input2{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
+.te-div{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-left: 160px;
+    
+}
+
+.te-button{
+    width: 165px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 900;
+    background-color: #ffc83d;
+    border-color: rgb(53, 47, 47);
+    margin-top: 20px;
+}
+
+.input2 textarea{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(53, 47, 47);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px ;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+textarea:focus{
+    border: 5px solid rgb(53, 47, 47);
+    outline: none;
+}
+
+.submit-main{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+
+
+.submit{
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 900;
+    background-color: #ffc83d;
+    border-color: rgb(53, 47, 47);
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.checkbox-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sent{
+    margin-top: 10px;
+}
+
+.checkbox-main fieldset{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.checkbox{
+    display: flex;
+    width: 100%;
+    margin: 0px 5px;
+}
+
+
